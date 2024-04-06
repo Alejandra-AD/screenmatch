@@ -10,7 +10,7 @@ public class Principal {
 
         Pelicula interstellar = new Pelicula();
         interstellar.nombre = "Interstellar";
-        interstellar.duracionMinutos = 209;
+        interstellar.duracionMinutos = 290;
         interstellar.fechaLanzamiento = 2014;
         interstellar.incluidoEnPlan = true;
         interstellar.muestraFichaTecnica();

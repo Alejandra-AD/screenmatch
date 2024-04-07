@@ -15,5 +15,7 @@ public class Principal {
         interstellar.incluidoEnPlan = true;
         interstellar.muestraFichaTecnica();
 
+        interstellar.promedioEvaluacion(7);
+
     }
 }

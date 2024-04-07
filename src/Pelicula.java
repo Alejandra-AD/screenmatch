@@ -4,6 +4,7 @@ public class Pelicula {
     int duracionMinutos;
 
     boolean incluidoEnPlan;
+    double promedioEvaluacion;
 
     void muestraFichaTecnica(){
         System.out.println("Nombre de la película = " + nombre);
@@ -13,4 +14,6 @@ public class Pelicula {
         System.out.println(mensajePlan);
         System.out.println("\n");
     }
+
+
 }

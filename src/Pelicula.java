@@ -15,5 +15,4 @@ public class Pelicula {
         System.out.println("\n");
     }
 
-
 }

@@ -14,6 +14,7 @@ public class Pelicula {
         System.out.println(mensajePlan);
         System.out.println("\n");
 
+
     }
 
 }

@@ -1,3 +1,7 @@
+package com.aluracursos.screenmatch.modelos;
+
+import com.aluracursos.screenmatch.modelos.Pelicula;
+
 public class Principal {
     public static void main(String[] args) {
 

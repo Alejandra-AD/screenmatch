@@ -1,15 +1,35 @@
 package com.aluracursos.screenmatch.modelos;
 
 public class Pelicula {
-    public String nombre;
-    public int fechaLanzamiento;
-    public int duracionMinutos;
+    private String nombre;
+    private int fechaLanzamiento;
+    private int duracionMinutos;
 
-    public boolean incluidoEnPlan;
+    private boolean incluidoEnPlan;
     private double sumaEvaluaciones;
 
     private int contador;
 
+
+    //setters
+
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+
+    public void setFechaLanzamiento (int fechaLanzamiento){
+        this.fechaLanzamiento = fechaLanzamiento;
+    }
+
+    public void setDuracionMinutos (int duracionMinutos){
+        this.duracionMinutos = duracionMinutos;
+    }
+
+    public void setIncluidoEnPlan (boolean incluidoEnPlan){
+        this.incluidoEnPlan = incluidoEnPlan;
+    }
+
+    //get
     public int getContador(){
         return contador;
     }

@@ -26,6 +26,9 @@ public class Principal {
         interstellar.muestraFichaTecnica();
 
 
+        System.out.println("Total de usuarios votaron = "  + onePieceRed.getContador());
+
+
 
 
     }

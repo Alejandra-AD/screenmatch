@@ -5,9 +5,14 @@ public class Pelicula {
     int duracionMinutos;
 
     boolean incluidoEnPlan;
-    double sumaEvaluaciones;
+    private double sumaEvaluaciones;
 
-    int contador;
+    private int contador;
+
+    int getContador(){
+        return contador;
+    };
+
 
     void evalua (double nota){
         sumaEvaluaciones += nota;

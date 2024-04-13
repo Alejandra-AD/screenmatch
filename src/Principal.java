@@ -18,6 +18,7 @@ public class Principal {
         onePieceRed.evalua(4.2);
         /*System.out.println("Calificación = " + onePieceRed.promedioEvaluaciones());*/
         onePieceRed.muestraFichaTecnica();
+        System.out.println("Total de usuarios votaron = "  + onePieceRed.getContador() +"\n");
 
 
 
@@ -29,11 +30,17 @@ public class Principal {
         interstellar.evalua(5);
         interstellar.evalua(4.4);
         interstellar.evalua(4.5);
+        interstellar.evalua(4.8);
         /*System.out.println("Calificación = " + interstellar.promedioEvaluaciones());*/
         interstellar.muestraFichaTecnica();
+        System.out.println("Total de usuarios votaron = "  + interstellar.getContador() +"\n");
 
 
-        System.out.println("Total de usuarios votaron = "  + onePieceRed.getContador());
+
+
+        //otras pruebas con get
+        System.out.println(onePieceRed.getNombre());
+        System.out.println(interstellar.getNombre());
 
 
 

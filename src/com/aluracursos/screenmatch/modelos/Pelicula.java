@@ -33,7 +33,11 @@ public class Pelicula {
     public int getContador(){
         return contador;
     }
+    public String getNombre(){
+        return nombre;
+    }
 
+/************************ Otros métodos *************************************************************/
     public void evalua (double nota){
         sumaEvaluaciones += nota;
         contador++;

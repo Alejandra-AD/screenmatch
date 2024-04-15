@@ -52,7 +52,10 @@ public class Principal {
         casaDragon.setEpisodiosPorTemporadas(10);
         casaDragon.setMinutosPorEpisodio(50);
         casaDragon.setIncluidoEnPlan(true);
+        System.out.println("\nSerie = " + casaDragon.getNombre() + ".\nDuración total de la serie = " +casaDragon.getDuracionMinutos() + " minutos.");
+/*
         System.out.println("\nSerie = "+ casaDragon.getNombre() + "\nTotal minutos serie = " + casaDragon.getduracionTotalSerie() + " minutos.");
+*/
 
 
 

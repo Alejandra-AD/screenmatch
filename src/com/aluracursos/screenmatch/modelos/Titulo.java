@@ -37,6 +37,10 @@ public class Titulo {
         return nombre;
     }
 
+    public int getDuracionMinutos(){ //override indica que a este metodo se le realizó una sobre escritura
+        return duracionMinutos;
+    }
+
     /************************ Otros métodos *************************************************************/
     public void evalua (double nota){
         sumaEvaluaciones += nota;

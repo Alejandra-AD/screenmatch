@@ -6,7 +6,6 @@ public class Serie extends Titulo{
     private int episodiosPorTemporadas;
     private int minutosPorEpisodio;
 
-    private double duracionTotalSerie;
 
     //get
 
@@ -38,5 +37,5 @@ public class Serie extends Titulo{
     public double getduracionTotalSerie(){
         return minutosPorEpisodio * episodiosPorTemporadas * temporadas;
 
-    };
+    }
 }

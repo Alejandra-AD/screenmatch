@@ -1,4 +1,5 @@
 import com.aluracursos.screenmatch.modelos.Pelicula;
+import com.aluracursos.screenmatch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -24,6 +25,7 @@ public class Principal {
 
         Pelicula interstellar = new Pelicula();
         interstellar.setNombre("Interstelalr");
+        interstellar.setDirector("Christopher Nolan");
         interstellar.setDuracionMinutos(290);
         interstellar.setFechaLanzamiento(2014);
         interstellar.setIncluidoEnPlan(true);
@@ -41,6 +43,19 @@ public class Principal {
         //otras pruebas con get
         System.out.println(onePieceRed.getNombre());
         System.out.println(interstellar.getNombre());
+
+        Serie casaDragon;
+        casaDragon = new Serie();
+        casaDragon.setNombre("House of the Dragon");
+        casaDragon.setFechaLanzamiento(2022);
+        casaDragon.setTemporadas(1);
+        casaDragon.setEpisodiosPorTemporadas(10);
+        casaDragon.setMinutosPorEpisodio(50);
+        casaDragon.setIncluidoEnPlan(true);
+        System.out.println("\nSerie = "+ casaDragon.getNombre() + "\nTotal minutos serie = " + casaDragon.getduracionTotalSerie() + " minutos.");
+
+
+
 
 
 

@@ -7,4 +7,8 @@ public class Pelicula extends Titulo {// se usa extends para que la clase "Pelic
     public String getDirector(){
         return getDirector();
     }
+
+    public void setDirector(String director){
+        this.director = director;
+    }
 }

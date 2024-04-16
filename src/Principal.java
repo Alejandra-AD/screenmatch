@@ -1,6 +1,6 @@
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
-
+import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
 public class Principal {
     public static void main(String[] args) {
 
@@ -54,9 +54,19 @@ public class Principal {
         casaDragon.setIncluidoEnPlan(true);
         casaDragon.muestraFichaTecnica();
         System.out.println("\nSerie = " + casaDragon.getNombre() + ".\nDuración total de la serie = " +casaDragon.getDuracionMinutos() + " minutos.");
+        System.out.println("\nSerie = " + onePieceRed.getNombre() + ".\nDuración total de la película = " +onePieceRed.getDuracionMinutos() + " minutos.");
+        System.out.println("\nSerie = " + interstellar.getNombre() + ".\nDuración total de la película = " +interstellar.getDuracionMinutos() + " minutos.");
+        System.out.println("\n");
 /*
         System.out.println("\nSerie = "+ casaDragon.getNombre() + "\nTotal minutos serie = " + casaDragon.getduracionTotalSerie() + " minutos.");
 */
+        CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
+        calculadora.incluye(onePieceRed);
+        calculadora.incluye(casaDragon);
+        calculadora.incluye(interstellar);
+        System.out.println("Tiempo total necesario para ver el contenido incluido en su lista = " + calculadora.getTiempoTotal() + " minutos.");
+
+
 
 
 

@@ -1,6 +1,8 @@
 package com.aluracursos.screenmatch.modelos;
 
-public class Pelicula extends Titulo {// se usa extends para que la clase "Pelicula" herede de la clase "Titulo"
+import com.aluracursos.screenmatch.calculos.Clasificacion;
+
+public class Pelicula extends Titulo implements Clasificacion {// se usa extends para que la clase "Pelicula" herede de la clase "Titulo"
 
     private String director;
 
@@ -10,5 +12,10 @@ public class Pelicula extends Titulo {// se usa extends para que la clase "Pelic
 
     public void setDirector(String director){
         this.director = director;
+    }
+
+    @Override
+    public int getClasificacion() { //interfaz
+        return 0;
     }
 }

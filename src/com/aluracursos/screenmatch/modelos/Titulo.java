@@ -47,7 +47,7 @@ public class Titulo {
         contador++;
 
     }
-    double promedioEvaluaciones(){
+    public double promedioEvaluaciones(){
         return Math.round((sumaEvaluaciones/contador) * 10.0) / 10.0;
 
 

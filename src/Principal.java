@@ -1,3 +1,4 @@
+import com.aluracursos.screenmatch.calculos.FiltroRecomendacion;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
@@ -65,6 +66,19 @@ public class Principal {
         calculadora.incluye(casaDragon);
         calculadora.incluye(interstellar);
         System.out.println("Tiempo total necesario para ver el contenido incluido en su lista = " + calculadora.getTiempoTotal() + " minutos.");
+
+
+        FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
+
+        for (int i = 0; i < 500 ; i++) {
+            onePieceRed.evalua(Math.random()*5+1);
+        }
+        onePieceRed.muestraFichaTecnica();
+
+        System.out.println(onePieceRed.getClasificacion());
+
+        filtroRecomendacion.filtra(onePieceRed);
+
 
 
 

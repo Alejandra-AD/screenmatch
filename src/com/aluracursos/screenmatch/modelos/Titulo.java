@@ -10,6 +10,11 @@ public class Titulo {
 
     private int contador;
 
+    public Titulo(String nombre, int fechaLanzamiento) {
+        this.nombre = nombre;
+        this.fechaLanzamiento = fechaLanzamiento;
+    }
+
 
     //setters
 

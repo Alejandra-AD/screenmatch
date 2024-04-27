@@ -1,3 +1,5 @@
+package com.aluracursos.screenmatch.principal;
+
 import com.aluracursos.screenmatch.calculos.FiltroRecomendacion;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
@@ -9,13 +11,10 @@ import java.util.ArrayList;
 public class Principal {
     public static void main(String[] args) {
 
-        Pelicula onePieceRed = new Pelicula();
+        Pelicula onePieceRed = new Pelicula("One Piece: Red",2022);
        /* onePieceRed.nombre = "One Piece: Red";*/
-        onePieceRed.setNombre("One Piece: Red");
        /* onePieceRed.duracionMinutos = 115;*/
         onePieceRed.setDuracionMinutos(115);
-        /*onePieceRed.fechaLanzamiento = 2022;*/
-        onePieceRed.setFechaLanzamiento(2022);
         /*onePieceRed.incluidoEnPlan = false;*/
         onePieceRed.setIncluidoEnPlan(false);
 
@@ -28,11 +27,9 @@ public class Principal {
 
 
 
-        Pelicula interstellar = new Pelicula();
-        interstellar.setNombre("Interstelar");
+        Pelicula interstellar = new Pelicula("Interstellar",2014);
         interstellar.setDirector("Christopher Nolan");
         interstellar.setDuracionMinutos(290);
-        interstellar.setFechaLanzamiento(2014);
         interstellar.setIncluidoEnPlan(true);
         interstellar.evalua(5);
         interstellar.evalua(4.4);
@@ -50,9 +47,7 @@ public class Principal {
         System.out.println(interstellar.getNombre());
 
         Serie casaDragon;
-        casaDragon = new Serie();
-        casaDragon.setNombre("House of the Dragon");
-        casaDragon.setFechaLanzamiento(2022);
+        casaDragon = new Serie("House of the dragon",2022);
         casaDragon.setTemporadas(1);
         casaDragon.setEpisodiosPorTemporadas(10);
         casaDragon.setMinutosPorEpisodio(50);

@@ -6,6 +6,11 @@ public class Pelicula extends Titulo implements Clasificacion {// se usa extends
 
     private String director;
 
+
+    public Pelicula(String nombre, int fechaLanzamiento) {
+        super(nombre, fechaLanzamiento);
+    }
+
     public String getDirector(){
         return director;
     }
@@ -22,6 +27,6 @@ public class Pelicula extends Titulo implements Clasificacion {// se usa extends
 
     @Override
     public String toString() {
-        return "(Nombre de película = " + this.getNombre()+ " ," + "Fecha de lanzamiento = " + this.getFechaLanzamiento() +")";
+        return "Película = " + this.getNombre()+ " ("+this.getFechaLanzamiento() +")";
     }
 }

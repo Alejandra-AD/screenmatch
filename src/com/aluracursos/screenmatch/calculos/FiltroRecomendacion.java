@@ -5,7 +5,7 @@ public class FiltroRecomendacion {
     public void filtra(Clasificacion clasificacion){
         if(clasificacion.getClasificacion() >= 4){
             System.out.println("De los mejores valorados por los usuarios");
-        }else if (clasificacion.getClasificacion() < 4 && clasificacion.getClasificacion() >= 2){
+        }else if (clasificacion.getClasificacion() >= 2){
             System.out.println("recomendada");
         }else{
             System.out.println("película aun no descubierta por los usuario");

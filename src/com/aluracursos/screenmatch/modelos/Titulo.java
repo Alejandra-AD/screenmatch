@@ -41,6 +41,8 @@ public class Titulo {
         return duracionMinutos;
     }
 
+    public int getFechaLanzamiento(){return fechaLanzamiento;}
+
     /************************ Otros métodos *************************************************************/
     public void evalua (double nota){
         sumaEvaluaciones += nota;

@@ -19,4 +19,9 @@ public class Pelicula extends Titulo implements Clasificacion {// se usa extends
         /*return (int) promedioEvaluaciones()/2; // (int) casteo para convertir a entero.*/
         return (int) Math.round(promedioEvaluaciones());
     }
+
+    @Override
+    public String toString() {
+        return "(Nombre de película = " + this.getNombre()+ " ," + "Fecha de lanzamiento = " + this.getFechaLanzamiento() +")";
+    }
 }

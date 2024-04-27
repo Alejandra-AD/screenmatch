@@ -2,6 +2,10 @@ import com.aluracursos.screenmatch.calculos.FiltroRecomendacion;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
+import com.aluracursos.screenmatch.modelos.Titulo;
+
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
 
@@ -25,7 +29,7 @@ public class Principal {
 
 
         Pelicula interstellar = new Pelicula();
-        interstellar.setNombre("Interstelalr");
+        interstellar.setNombre("Interstelar");
         interstellar.setDirector("Christopher Nolan");
         interstellar.setDuracionMinutos(290);
         interstellar.setFechaLanzamiento(2014);
@@ -78,6 +82,20 @@ public class Principal {
         System.out.println(onePieceRed.getClasificacion());
 
         filtroRecomendacion.filtra(onePieceRed);
+
+
+        //practicando con Arraylist
+
+        ArrayList<Titulo>listaDePeliculas = new ArrayList<>();
+        listaDePeliculas.add(onePieceRed);
+        listaDePeliculas.add(interstellar);
+
+        System.out.println( "Tamaño del arraylist = "+ listaDePeliculas.size());
+        System.out.println("primer elemento de la lista = " + listaDePeliculas.get(0).getNombre());
+        System.out.println(listaDePeliculas);
+        listaDePeliculas.toString();
+
+
 
 
 
